@@ -322,7 +322,7 @@ img{
   width: 85%;
 }
 .skills__css{
-  width:70%;
+  width:90%;
 }
 .skills__js{
   width: 70%;
@@ -364,39 +364,11 @@ img{
 
 /* ===== CONTACT =====*/
 
-.contact__img{
-  justify-self: center;
-}
-.contact__img img{
-  width: 500px;
-}
 
-.contact__input{
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  outline: none;
-  margin-bottom: 1rem;
-  border: none;
-  color: var(--second-color);
-  background-color: #AEB5BB;
-}
-
-.contact__container{
-  row-gap: 2rem;
+.email{
   text-align: center;
 }
-.contact__button{
-  display: inline-block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  width: 100%;
-  margin-left:0;
-  
-}
+
 
 textarea{
   font-family: roboto, sans-serif;
@@ -512,6 +484,7 @@ textarea{
   }
   .about__img img{
     width: 300px;
+    margin-bottom: 22%;
   }
   .work__container{
     grid-template-columns: repeat(3, 1fr);
