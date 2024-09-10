@@ -1,264 +1,317 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Portfólio</title>
+  </head>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title >Portfólio</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#home">
-                        <div class="nav__logo">
-                            
-                            <h3 style="position: absolute;
-                             z-index: 2; top:7px; margin-left: 18px;" class="logo" alt="" width="50px" height="50px">Portfólio</h3>
-                        </div>
-                     </a>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#home">Portfólio</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#work">Trabalhos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-primary text-white" href="#contact"
+                        >Contato</a
+                      >
+                    </li>
+                  </ul>
                 </div>
+              </nav>
+        </div>
+    </header>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Trabalhos</a></li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link"><input type="button" value="Contato" class="button-nav"></a></li>
-                    </ul>
-                </div>
+    <main class="container p-5 mt-5">
+      <!--===== HOME =====-->
+      <section id="home" class="text-center">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1>
+              Olá! <br />Sou o <span class="font-weight-bold">Erick Gomes</span>
+            </h1>
+            <p>
+              Front-End Developer e estudante de <br />Análise e Desenvolvimento
+              de sistemas na UniFECAF
+            </p>
+            <h3>HTML | CSS | JAVASCRIPT | NODE.JS | REACT.JS</h3>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="assets/img/image-inicial.jpg"
+              alt="programador"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <span class="home__title">Olá! <br> Sou o <span class="home__title home__title-color">Erick Gomes</span></span>
-                    <br><br>
-                    <p>Front-End Developer e estudante de <br> Análise e Desenvolvimento de sistemas na UniFECAF</p>
-                    <h3>HTML|CSS|JAVASCRIPT|NODE.JS|REACT.JS</h3>
-                </div>
-
-                <div class="home__img">    
-                    <img src="assets/img/image-inicial.jpg" alt="programador">
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">Sobre</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img " data-tilt>
-                        <img src="assets/img/PortPhoto.jpg" alt="Foto Sobre">
-                    </div>
-                    
-                    <div >
-
-                        <p class="about__text" style="text-align: justify;  ">
-                                                 Profissional com grande conhecimento em desenvolvimento web,
-                                 entregando soluções ágeis com resultados assertivos nos projetos desenvolvidos, Atualmente cursando Análise de Desenvolvimento de Sistemas.
-                                <br><br>
-    Descobri minha missão e propósito na área de Tecnologia aos 14 anos, quando iniciei o curso básico de informática onde aprendi Pacote Office, montagem e manutenção de microcomputadores e tive meu primeiro contato com o HTML, além de poder conhecer a implementação de suporte técnico com 
-    treinamento de 4 dias para cumprir a demanda de uma empresa.
-    <br><br>
-    Desde então venho estudando e me aprofundando em diversas linguagens de programação e ferramentas do nicho como CSS, JavaScript, Node.js , Node Express, MongoDB, API REST, React, Typescript, então logo vi que atuar nessa área poderia me abrir muitas oportunidades e realizações pessoal e profissional. 
-    
-    Atualmente possuo inglês intermediário para leitura de documentação e manuais, realizando projetos próprios no Github para portfólio profissional.
-                                <br><br>
-    Busco novos desafios, tenho curiosidade aguçada para criatividade a desenvolver novos projetos, além de facilidade de aprendizagem de novas tecnologias para resolutividade da demanda de mercado.
-                            <div class="home__social" style="margin: 10px;">
-                                <a href="https://www.linkedin.com/in/erick-gomes-moreira-365997201/"  class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                               
-                                <a href="https://github.com/zingrad" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                            </div>
-                            <a href="#contact" class="button">Contatar</a>
-                        </p>
-                      </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title"> <strong>Habilidades</strong></h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                
-                                <span class="skills__name">JavaScript</span>
-                            </div>
-                            <div class="skills_back">
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills_back">
-                            </div>
-                            <div class="skills__bar skills__html">
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <span class="skills__name">React.JS
-                                </span>
-                            </div>
-                            <div class="skills_back">
-                            </div>
-                            <div class="skills__bar skills__react">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">45%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>   
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                
-                                <span class="skills__name">Node Js
-                                </span>
-                            </div>
-                            <div class="skills_back">
-                            </div>
-                            <div class="skills__bar skills__node">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">40%</span>
-                            </div>
-                        </div> 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                
-                                <span class="skills__name">CSS 3
-                                </span>
-                            </div>
-                            <div class="skills_back">
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                        </div>  
-                       
-                        </div>   
-                            
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title"> <strong>Trabalhos</strong></h2>
-
-                <div class="work__container bd-grid">
-                    
-                    <div class="work__img">
-                        <h4 style="text-align:center;">Jogo Da Mémoria</h4>
-                     <a href="https://zingrad.github.io/Jogo_da_memoria_react" target="_blank"><img src="assets/img/work1.png" alt="Jogo Da Mémoria" > </a> 
-                    </div>
-                    <div class="work__img">
-                        <h4 style="text-align:center;">Página de Captura</h4>
-                        <a href="https://zingrad.github.io/Pagina-de-captura-/" target="_blank">  <img src="assets/img/work2.png" alt="Página de Captura"> </a> 
-                    </div>
-                    <div class="work__img">
-                        <h4 style="text-align:center;">Todo_list</h4>
-                        <a href="https://zingrad.github.io/Todo_list" target="_blank">    <img src="assets/img/work3.png" alt="Todo_list"> </a> 
-                    </div>
-                    <div class="work__img">
-                        <h4 style="text-align:center;">Dev Finances</h4>
-                        <a href="https://zingrad.github.io/Dev_finance_project/" target="_blank">   <img src="assets/img/work4.png"  alt="Dev Finances"> </a> 
-                       
-                    </div>
-                    <div class="work__img">
-                        <h4 style="text-align:center;">Treine.me</h4>
-                        <a href="https://zingrad.github.io/treine.me/" target="_blank">  <img src="assets/img/work5.png" alt="Treine.me"> </a> 
-                        
-                       
-                       
-                    </div>
-                    <div class="work__img">
-                        <h4 style="text-align:center;">Platform</h4>
-                        <a href="https://zingrad.github.io/Platform/" target="_blank">    <img src="assets/img/work6.png" alt="Platform">  </a> 
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT Me =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title"> <strong>Entre em  contato</strong></h2>
-               <h3 class="email"><Strong>E-mail:</Strong> Erick.Gomess2002@gmail.com</h3>
-                    
-
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-             <div class="div_footer">
-                
-                <div class="footer__title div_inline">Erick Gomes</div>
-                <div class="footer__social div_inline">
-                    <a href="https://www.linkedin.com/in/erick-gomes-moreira-365997201/" class="footer__icon">
-                        <i class='bx bxl-linkedin' ></i>
-                    </a>
-                    <a href="https://github.com/zingrad" class="footer__icon">
-                        <i class='bx bxl-github' ></i>
-                    </a>
-                   
-                    
-                </div>
+      <!--===== ABOUT =====-->
+      <section id="about" class="p-5">
+        <h2 class="text-center">Sobre</h2>
+        <div class="row align-items-start mt-5">
+          <div class="col-md-6">
+            <img
+              src="assets/img/PortPhoto.jpg"
+              alt="Foto Sobre"
+              class="rounded-circle w-75"
+            />
+          </div>
+          <div class="col-md-6">
+            <p class="text-justify">
+              Profissional com grande conhecimento em desenvolvimento web,
+              entregando soluções ágeis com resultados assertivos nos projetos
+              desenvolvidos. Atualmente cursando Análise de Desenvolvimento de
+              Sistemas.
+              <br /><br />
+              Descobri minha missão e propósito na área de Tecnologia aos 14
+              anos, quando iniciei o curso básico de informática onde aprendi
+              Pacote Office, montagem e manutenção de microcomputadores e tive
+              meu primeiro contato com o HTML, além de poder conhecer a
+              implementação de suporte técnico com treinamento de 4 dias para
+              cumprir a demanda de uma empresa.
+              <br /><br />
+              Desde então venho estudando e me aprofundando em diversas
+              linguagens de programação e ferramentas do nicho como CSS,
+              JavaScript, Node.js, Node Express, MongoDB, API REST, React,
+              Typescript. Logo percebi que atuar nessa área poderia me abrir
+              muitas oportunidades e realizações pessoais e profissionais.
+              Atualmente possuo inglês intermediário para leitura de
+              documentação e manuais, realizando projetos próprios no Github
+              para portfólio profissional.
+              <br /><br />
+              Busco novos desafios, tenho curiosidade aguçada para desenvolver
+              novos projetos, além de facilidade de aprendizagem de novas
+              tecnologias para atender a demanda do mercado.
+            </p>
+            <div class="my-3">
+              <a
+                href="https://www.linkedin.com/in/erick-gomes-moreira-365997201/"
+                class="btn btn-outline-primary mr-2"
+                ><i class="bx bxl-linkedin"></i> LinkedIn</a
+              >
+              <a href="https://github.com/zingrad" class="btn btn-outline-dark"
+                ><i class="bx bxl-github"></i> GitHub</a
+              >
             </div>
-            
-            <div class="last_footer">
-                 <br>
-                    Made by <a href="https://github.com/zingrad">Erick Gomes</a></p>
-                <p>Todos os direitos reservados &#169; 2021</p>
-                
+            <a href="#contact" class="btn btn-primary">Contatar</a>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section id="skills" class="my-5">
+        <div class="container p-5">
+          <h2 class="text-center"><strong>Habilidades</strong></h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="progress my-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  JavaScript 70%
+                </div>
+              </div>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 85%"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  HTML5 85%
+                </div>
+              </div>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 45%"
+                  aria-valuenow="45"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  React.JS 45%
+                </div>
+              </div>
             </div>
-            
-        </footer>
+            <div class="col-md-6">
+              <div class="progress my-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 40%"
+                  aria-valuenow="40"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  Node Js 40%
+                </div>
+              </div>
+              <div class="progress my-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 90%"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  CSS 3 90%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!--===== WORK =====-->
+      <section id="work" class="my-5">
+       <div class="container p-5">
+        <h2 class="text-center"><strong>Trabalhos</strong></h2>
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="text-center">Jogo Da Mémoria</h4>
+            <a
+              href="https://zingrad.github.io/Jogo_da_memoria_react"
+              target="_blank"
+              ><img
+                src="assets/img/work1.png"
+                alt="Jogo Da Mémoria"
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">Página de Captura</h4>
+            <a
+              href="https://zingrad.github.io/Pagina-de-captura-/"
+              target="_blank"
+              ><img
+                src="assets/img/work2.png"
+                alt="Página de Captura"
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">Todo_list</h4>
+            <a href="https://zingrad.github.io/Todo_list" target="_blank"
+              ><img
+                src="assets/img/work3.png"
+                alt="Todo_list"
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">Dev Finances</h4>
+            <a
+              href="https://zingrad.github.io/Dev_finance_project/"
+              target="_blank"
+              ><img
+                src="assets/img/work4.png"
+                alt="Dev Finances"
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">Treine.me</h4>
+            <a href="https://zingrad.github.io/treine.me/" target="_blank"
+              ><img
+                src="assets/img/work5.png"
+                alt="Treine.me"
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">Platform</h4>
+            <a href="https://zingrad.github.io/Platform/" target="_blank"
+              ><img src="assets/img/work6.png" alt="Platform" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+       </div>
+      </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+      <!--===== CONTACT ME =====-->
+      <section id="contact" class="my-5 d-flex flex-column align-items-center">
+       
+          <h2 class="h2">Entre em contato</h2>
+          <h3 class="h3">E-mail:</h3>
+          <a href="mailto:Erick.Gomess2002@gmail.com" class="text-primary"
+            >Erick.Gomess2002@gmail.com</a
+          >
+      </section>
+    </main>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+    <!--===== FOOTER =====-->
+    <footer class="bg-light py-4">
+      <div class="container p-5 text-center">
+        <div class="mb-2">Erick Gomes</div>
+        <div class="mb-3">
+          <a
+            href="https://www.linkedin.com/in/erick-gomes-moreira-365997201/"
+            class="mx-2"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/zingrad" class="mx-2"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+        <div>
+          Made by <a href="https://github.com/zingrad">Erick Gomes</a>
+          <p>Todos os direitos reservados &#169; 2021</p>
+        </div>
+      </div>
+    </footer>
 
-        <!--Tilt.JS-->
-        <script src="./assets/js/vanilla-tilt.min.js"></script>
-    </body>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/vanilla-tilt.min.js"></script>
+  </body>
 </html>
